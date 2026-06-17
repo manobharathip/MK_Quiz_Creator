@@ -714,7 +714,6 @@
     <div class="progress-bar-wrap">
       <div class="progress-bar-fill" id="progressBar" style="width:0%"></div>
     </div>
-    <div id="typeNavButtons"></div>
     <div id="question-area"></div>
   </div>
 
@@ -1078,7 +1077,7 @@ function renderQuestion() {
   const typeTag=q.originalType||currentType;
   const streakHtml=(correctStreak>=3)?'<div class="streak-banner">🔥 '+correctStreak+' தொடர் சரி! 🔥</div>':'';
   
-  const badgeHtml = pronounTypes.length > 1 ? `<div class="q-type-badge">${escHtml(typeTag)}</div>` : '';
+  const badgeHtml = '';
 
   let optHtml='';
   q.options.forEach((opt,i)=>{
