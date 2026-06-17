@@ -1,0 +1,2 @@
+rootProject.name = "MKQuizCreator"
+include ':app'
